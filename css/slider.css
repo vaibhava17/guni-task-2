@@ -1,0 +1,45 @@
+/*generated with Input range slider CSS style generator (version 20201227)
+https://toughengineer.github.io/demo/slider-styler*/
+input[type="range"].styled-slider {
+    height: 32px;
+    width:100%;
+    max-width: 473px;
+    -webkit-appearance: none;
+}
+
+/*progress support*/
+input[type="range"].styled-slider.slider-progress {
+    --range: calc(var(--max) - var(--min));
+    --ratio: calc((var(--value) - var(--min)) / var(--range));
+    --sx: calc(0.5 * 3px + var(--ratio) * (100% - 3px));
+}
+
+/*webkit*/
+input[type="range"].styled-slider::-webkit-slider-thumb {
+    width: 12px;
+    height: 12px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #fff, #fff),
+    linear-gradient(#eeeded, #eeeded);
+    background-attachment: fixed, fixed;
+    background-clip: padding-box, border-box;
+    border: 3px solid #158BBB;
+    margin-top: calc(14px * 0.5 - 9px);
+    -webkit-appearance: none;
+    /* transform: translatey(-5px) */
+}
+
+input[type="range"].styled-slider::-webkit-slider-runnable-track {
+    height: 8px;
+    border-radius: 150px;
+    width:100%;
+    max-width:468px;
+    border: none;
+    /*   box-shadow: inset 0 2px 5px 0 #b9b9b9; */
+    transform: translatex(3px)
+}
+input[type="range"].styled-slider.slider-progress::-webkit-slider-runnable-track {
+    background: linear-gradient(to right, #158BBB, #158BBB) 0 / var(--sx) 100%
+        no-repeat,
+    linear-gradient(#fff, #fff 50%);
+}

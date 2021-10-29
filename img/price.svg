@@ -68,9 +68,9 @@ Free Templates/Use-Cases" transform="translate(74.5 314.241)" font-size="16" fon
   <text id="_14-_Day_Free_Trial" data-name="14- Day
  Free Trial" transform="translate(196.5 123.241)" font-size="20" font-family="SegoeUI, Segoe UI"><tspan x="-34.458" y="0">14- Day</tspan><tspan x="-42.075" y="25" xml:space="preserve"> Free Trial</tspan></text>
   <text id="_" data-name="$" transform="translate(194.029 69.213)" fill="#5fbad6" font-size="44" font-family="SegoeUI, Segoe UI" letter-spacing="0.02em"><tspan x="-11.859" y="0">$</tspan></text>
-  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_690)">
+  <!-- <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rectangle_690)">
     <rect id="Rectangle_690-2" data-name="Rectangle 690" width="170" height="45" rx="22.5" transform="translate(110.5 408.24)" fill="#7adde8"/>
-  </g>
+  </g> -->
   <path id="Polygon_1" data-name="Polygon 1" d="M6.5,0,13,12H0Z" transform="translate(57.5 303.241)" fill="#7adde8"/>
   <path id="Polygon_2" data-name="Polygon 2" d="M6.5,0,13,12H0Z" transform="translate(57.5 325.241)" fill="#7adde8"/>
   <path id="Polygon_3" data-name="Polygon 3" d="M6.5,0,13,12H0Z" transform="translate(57.5 347.241)" fill="#7adde8"/>
