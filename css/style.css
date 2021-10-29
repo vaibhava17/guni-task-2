@@ -1,7 +1,5 @@
 /* desktop - 992px  */
 /* ipad - 768px */
-/*  */
-
 *{
     margin: 0;
     padding: 0;
@@ -13,10 +11,11 @@ body{
     padding: 30px;
     font-weight: bold;
 }
+
 /* Header */
 .header{
-    padding-top: 7%;
-    padding-bottom: 7%;
+    padding-top: 4%;
+    padding-bottom: 4%;
 }
 .main-heading{
     font-size: 2rem;
@@ -34,7 +33,22 @@ body{
     margin-top:30px;
     margin-bottom:20px;
 }
-@media (max-width: 991px) and (min-width: 768px){
+.btn-f{
+    display: inline-block;
+    color: white;
+    font-size: 1em;
+    padding: .4em 1.8em;
+    background-color: #5ACCDE;
+    margin-top: 30px;
+    -webkit-appearance: none;
+    appearance: none;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+}
+@media (max-width: 992px) and (min-width: 768px){
     .img{
         width: 100%;
         display: inline-block;
@@ -57,7 +71,7 @@ body{
         margin-bottom:13px;
     }
 }
-@media (max-width: 767px){
+@media (max-width: 768px){
     .main{
         position: relative;
     }
@@ -101,25 +115,11 @@ body{
     }
     
 }
-.btn-f{
-    display: inline-block;
-    color: white;
-    font-size: 1em;
-    padding: .4em 1.8em;
-    background-color: #5ACCDE;
-    margin-top: 30px;
-    -webkit-appearance: none;
-    appearance: none;
-    border-radius: 50px;
-    border: none;
-    cursor: pointer;
-    position: relative;
-    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
-}
 
 /* Platform */
 .platform{
     background: #D4F3FE;
+    padding-bottom: 4%;
     justify-content: center;
 }
 .platform-btn{
@@ -188,13 +188,16 @@ td span{
     margin: 1em;
     margin-left: 10%;
 }
-li{
+.list li{
     color: #000000;
     line-height: 50px;
 }
 .list button{
     margin-top: -10px;
     margin-left: -20px;
+}
+.list2{
+    display: none;
 }
 .line{
     margin-top: 20px;
@@ -206,7 +209,7 @@ li{
 .line a{
     font-weight: bold;
 }
-.platform-box{
+.boxes{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr; 
@@ -216,35 +219,139 @@ li{
     border-radius: 6px;
     margin: 20px auto;
     width: 300px;
-    height: 200px;
+    height: 220px;
     border: #5ACCDE solid 1px;
     cursor: pointer;
     transition: 0.4s;
     box-shadow: rgba(99, 99, 99, 0.300) 0 0 10px;
 }
+.box h5{
+    font-size: 15px;
+    font-weight: bold;
+}
+.box p{
+    font-size: 12px;
+}
+.text-center button{
+    padding-bottom: 10px;
+}
+@media (max-width: 992px) and (min-width: 768px){
+    .boxes{
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: 1fr 1fr;
+    }
+    table tr th {
+        font-size: 0.8em;
+        padding: 0em 1em;
+    }
+    tbody td {
+        font-size: .7em;
+        padding: 0em .8em;
+    }
+    tfoot tr td{
+        padding: 0.3em 1em;
+        font-size: 0.8em;
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .list{
+        display: none;
+    }
+    .list2{
+        display: block;
+        padding: 10%;
+    }
+    .list2 button{
+        margin-top: -10px;
+        margin-left: -20px;
+    }
+    .list2 h6{
+        font-size: .8rem;
+    }
+    .boxes{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .box:nth-child(5){
+        display: none;
+    }
+    .box:nth-child(6){
+        display: none;
+    }
+}
 
-/* 
-.platform-table{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}*/
 /* Proposition */
 .proposition{
+    padding-bottom: 4%;
     display: grid;
     justify-content: center;
     grid-template-rows: auto auto;
 }
-.proposition-box{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+.proposition .box {
+    background: white;
+    border-radius: 6px;
+    margin: 20px;
+    width: 300px;
+    height: 220px;
+    border: #5ACCDE solid 1px;
+    cursor: pointer;
+    transition: 0.4s;
+    box-shadow: rgba(99, 99, 99, 0.300) 0 0 10px;
 }
+.box2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.proposition .btn-f{
+    display: none;
+}
+@media (max-width: 768px) {
+    .box2{
+        display: none;
+    }
+    .proposition .box:nth-child(4){
+        display: none;
+    }
+    .proposition .btn-f{
+        display: inline;
+    }
+}
+
+
 /* Calculator */
 .calculator{
     background: #D4F3FE;
-    display: grid;
+    padding-bottom: 4%;
     justify-content: center;
 }
+.calculator h6{
+    font-weight: normal;
+    font-size: 15px;
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-bottom: 20px;
+}
+.amount h6{
+    font-weight: normal;
+    font-size: 15px;
+    text-align: center;
+    color: #5ACCDE;
+}
+.dark{
+    background-color: #158BBB;
+}
+.light{
+    color: #158BBB;
+    background-color: #D4F3FE;
+    border: 2px solid #158BBB;
+    border-color: #158BBB;
+}
+
 
 /* Price */
 .price{
