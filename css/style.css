@@ -369,7 +369,12 @@ td span{
     padding-top: 60px;
     padding-bottom: 60px;
 }
-
+@media (max-width:498px) {
+    .styled-slider{
+        width: 100%;
+        height: auto;
+    }
+}
 /* Price */
 .price{
     background: #D4F3FE;
@@ -413,7 +418,6 @@ td span{
         grid-template-columns: auto;
     }
 }
-
 @media (max-width: 992px) and (min-width: 768px){
     .network-img{
         margin-top: 20%;
@@ -426,14 +430,82 @@ td span{
     justify-content: center;
     grid-template-columns: auto auto auto;
 }
+.box-container {
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+.box-value h5{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.box-value p{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    font-size: 13px;
+    transform: translate(-50%, -50%);
+}
+.box-value i{
+    position: absolute;
+    top: 87.6%;
+    left: 81%;
+    color: #158BBB;
+    transform: translate(-50%, -50%);
+}
+.box-img {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 
 /* Footer */
 .card-foot{
     display: grid;
+    padding-top: 4%;
+    padding-bottom: 4%;
     justify-content: center;
     grid-template-columns: auto auto;
 }
 .card-items{
     display: grid;
+    padding: 10%;
     grid-template-rows: auto auto auto;
 }
+.card-items h6{
+    padding: 30px;
+    font-weight: normal;
+}
+.card__content {
+	box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+	background: rgb(255, 255, 255);
+	color: rgb(10, 5, 7);
+	border-radius: 1em;
+	overflow: hidden;
+	display: grid;
+	grid-template-areas: "text img";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto;
+
+	align-items: stretch;
+	outline: var(--outline-width) solid lime;
+}
+.card__content > figure {
+	grid-area: img;
+	overflow: hidden;
+    padding: 10%;
+}
+.card__content > figure > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+
+
+
