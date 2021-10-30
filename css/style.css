@@ -273,6 +273,9 @@ td span{
 .box p{
     font-size: 12px;
 }
+.box img{
+    margin-bottom: 10px;
+}
 @media (max-width: 992px) and (min-width: 768px){
     .boxes{
         display: grid;
