@@ -1,6 +1,6 @@
-/* breakpoint - 992px  */
+/* breakpoint - 498px */
 /* breakpoint-2 - 768px */
-/* breakpoint-3 - 488px */
+/* breakpoint-3 - 992px  */
 /* breakpoint-4 - 1200px */
 
 *{
@@ -13,6 +13,11 @@ body{
 .heading{
     padding: 30px;
     font-weight: bold;
+}
+@media (max-width: 498px){
+    .heading{
+        font-size: 6vw;
+    }
 }
 
 /* Header */
@@ -74,6 +79,9 @@ body{
         margin-top:20px;
         margin-bottom:13px;
     }
+    .btn-f{
+        margin-top: 0;
+    }
 }
 @media (max-width: 768px){
     .main{
@@ -120,9 +128,21 @@ body{
     
 }
 @media (max-width:498px) {
+    .main-heading{
+        padding: 3%;
+        font-size: 7vw;
+    }
+    .main-description{
+        font-size: 5vw;
+        margin-bottom:0px;
+    }
     .img{
+        margin-top: -170px;
         width: 80vw;
         height: auto;
+    }
+    .btn-c{
+        font-size: 4vw;
     }
     .center{
         margin: 0;
@@ -253,9 +273,6 @@ td span{
 .box p{
     font-size: 12px;
 }
-.text-center button{
-    padding-bottom: 10px;
-}
 @media (max-width: 992px) and (min-width: 768px){
     .boxes{
         display: grid;
@@ -305,7 +322,36 @@ td span{
     }
 }
 @media (max-width:498px) {
-    
+    .box {
+        width: 80vw;
+        height: auto;
+    }
+    .flat-button {
+        font-size: 3vw;
+        height: 6vw;
+        
+    }
+    .platform h6 {
+        font-size: 4vw;
+    }
+    table tr th {
+        font-size: 4.5vw;
+    }
+    tbody td {
+        font-size: 4vw;
+    }
+    tfoot tr td {
+        font-size: 4.5vw;
+    }
+    .list2 ul li{
+        font-size: 4vw;
+    }
+    .list2 button {
+        font-size: 4vw;
+    }
+    .features button{
+        font-size: 4vw;
+    }
 }
 
 /* Proposition */
@@ -346,7 +392,13 @@ td span{
     }
 }
 @media (max-width:498px) {
-    
+    .proposition .box {
+        width: 80vw;
+        height: auto;
+    }
+    .proposition button{
+        font-size: 4vw;
+    }
 }
 /* Calculator */
 .calculator{
@@ -415,10 +467,23 @@ td span{
         margin: 4px;
     }
 }
+@media (max-width: 523px) {
+    .btn-line button{
+        font-size: 2.6vw;
+    }
+}
 @media (max-width:498px) {
     .styled-slider{
         width: 100%;
         height: auto;
+    }
+    .btn-line{
+        padding: 10px;
+        font-size: 10px;
+    }
+    .calculator h6 {
+        font-size: 3.5vw;
+        
     }
 }
 /* Price */
@@ -473,7 +538,29 @@ td span{
         grid-template-columns: auto;
     }
 }
-
+@media (max-width:498px) {
+    .price .row{
+        display: grid;
+        grid-template-columns: 1fr ;
+    }
+    .network-img{
+        display: none;
+    }
+    .network-img2{
+        width: 90vw;
+        padding-left: 10%;
+        padding-right: 10%;
+        height: auto;
+    }
+    .img-btn{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .img-btn .btn-f {
+        font-size: 4vw;
+        top: 83.5%;
+    }
+}
 
 /* Value */
 .value{
@@ -564,6 +651,30 @@ td span{
         transform: translate(-50%, -50%);
     }
 }
+@media (max-width:498px) {
+    .box-container .box-cover{
+        width: 90vw;
+        height: auto;
+    }
+    .box-img{
+        top: 80%;
+        width: 30%;
+    }
+    .box-value p{
+        font-size: 4vw;
+    }
+    .box-value i{
+        position: absolute;
+        top: 87.6%;
+        font-size: 5vw;
+        left: 81.3%;
+        color: #158BBB;
+        transform: translate(-50%, -50%);
+    }
+    .box-value h5 {
+        font-size: 8vw;
+    }
+}
 
 /* Footer */
 .card-foot{
@@ -643,6 +754,9 @@ td span{
         padding: 0;
         text-align: center;
     }
+    .card-items h6{
+        text-align: center;
+    }
     .card__content > figure > img{
         grid-area: img;
     }
@@ -650,6 +764,22 @@ td span{
         padding: 0;
     }
 }
-
+@media (max-width:498px) {
+    .card-items h4 {
+        padding-top: 5%;
+        font-size: 7vw;
+    }
+    .card-items h6 {
+        text-align: center;
+        font-size: 3.5vw;
+        padding: 10px;
+    }
+    .footer-img{
+        width: 90vw;
+    }
+    .card-items {
+        padding: 0;
+    }
+}
 
 
