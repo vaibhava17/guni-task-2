@@ -118,7 +118,8 @@ body{
 }
 @media (max-width:499px) {
     .img{
-        width: 80vw;
+        width: 300px;
+        height: auto;
     }
 }
 
