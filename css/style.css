@@ -603,6 +603,9 @@ td span{
 	height: 100%;
 	object-fit: cover;
 }
+.footer-img-res{
+    display: none;
+}
 
 @media (max-width: 1200px) and (min-width: 768px){
     .card-items h4{
@@ -622,21 +625,30 @@ td span{
     }
 }
 @media (max-width: 767px){
+    /* .card__content {
+        display: flex;
+        grid-template-areas: "text img";
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        align-items: stretch;
+    }
+    .card-items{
+        grid-column: 1;
+        grid-row: 1;
+        justify-content: center;
+    }
     .card-items h4{
         font-size: 1rem;
         padding: 0;
-    }
-    .card-items h6{
-        font-size: 0.8rem;
-        padding: 0;
-    }
-    .footer-img{
-        width: 100%;
+        text-align: center;
     }
     .card__content > figure > img{
-        width: 100%;
-        height: auto;
+        display: none;
     }
+    .footer-img-res{
+        display: block;
+
+    } */
 }
 
 
