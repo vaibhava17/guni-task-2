@@ -422,6 +422,10 @@ td span{
     text-align: center;
     color: #5ACCDE;
 }
+.amount img{
+    width: 100%;
+    height: auto;
+}
 .dark{
     background-color: #158BBB;
 }
@@ -435,10 +439,17 @@ td span{
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.slider{
+    position: relative;
+    text-align: center;
+}
 .styled-slider{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     height: 32px;
     direction: ltr; 
-    background: #D4F3FE; 
     border-radius: 150px; 
     --value:4000; 
     --min:4000; 
