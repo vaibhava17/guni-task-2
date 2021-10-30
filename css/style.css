@@ -625,30 +625,30 @@ td span{
     }
 }
 @media (max-width: 767px){
-    /* .card__content {
-        display: flex;
-        grid-template-areas: "text img";
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
+    .card__content {
+        display: grid;
+        grid-template-areas: "txt""img";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
         align-items: stretch;
     }
     .card-items{
+        grid-area: txt;
         grid-column: 1;
         grid-row: 1;
         justify-content: center;
     }
     .card-items h4{
-        font-size: 1rem;
+        font-size: 1.7rem;
         padding: 0;
         text-align: center;
     }
     .card__content > figure > img{
-        display: none;
+        grid-area: img;
     }
-    .footer-img-res{
-        display: block;
-
-    } */
+    .card__content > figure {
+        padding: 0;
+    }
 }
 
 
