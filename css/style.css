@@ -14,7 +14,7 @@ body{
 
 /* Header */
 .header{
-    background: rgb(207, 146, 13);
+    background: rgb(13, 26, 207);
     padding-top: 4%;
     padding-bottom: 4%;
 }
@@ -118,7 +118,7 @@ body{
 }
 @media (max-width:499px) {
     .img{
-        width: 300px;
+        width: 80vw;
         height: auto;
     }
 }
