@@ -234,7 +234,14 @@
             <div class="amount">
                 <div class="text-center slider">
                     <img src="img/slider.svg" />
-                    <input type="range" min="0" max="100000" step="100" id="myrange" class="styled-slider slider-progress">
+                    <div class="range">
+                        <div class="sliderValue">
+                            <span>100</span>
+                        </div>
+                        <div class="field">
+                            <input type="range" min="5" max="100" value="50" steps="1">
+                        </div>
+                    </div>
                 </div>
                 <h6>How many people are you engaging with</h6>
                 <div class="text-center btn-line">
@@ -310,7 +317,19 @@
             </div>
         </footer>
     </div>
-    <script src="js/slider.js"></script>
+    <script>
+        const slideValue = document.querySelector(".sliderValue span");
+        const inputSlider = document.querySelector("input");
+        inputSlider.oninput = (() => {
+            let value = inputSlider.value;
+            slideValue.textContent = value + "K";
+            slideValue.style.left = value + "%";
+            slideValue.classList.add("show");
+        });
+        inputSlider.onblur = (() => {
+            slideValue.classList.remove("show");
+        });
+    </script>
 </body>
 
 </html>

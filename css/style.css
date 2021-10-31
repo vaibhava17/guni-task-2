@@ -435,25 +435,19 @@ td span{
     border: 2px solid #158BBB;
     border-color: #158BBB;
 }
-.amount input{
+/* .amount input{
     padding-top: 60px;
     padding-bottom: 60px;
-}
+} */
 .slider{
     position: relative;
-    text-align: center;
+    padding-top: 8%;
 }
-.styled-slider{
+.range{
     position: absolute;
-    top: 48%;
+    top: 67%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 32px;
-    direction: ltr; 
-    border-radius: 150px; 
-    --value:4000; 
-    --min:4000; 
-    --max:75000;
 }
 @media (max-width: 992px) and (min-width: 768px){
     
@@ -464,9 +458,6 @@ td span{
     }
     .light{
         background-color: #fff;
-    }
-    .styled-slider{
-        background: #fff;
     }
     .platform-btn .ftb{
         background-color: #fff;
@@ -487,10 +478,6 @@ td span{
     }
 }
 @media (max-width:498px) {
-    .styled-slider{
-        width: 100%;
-        height: auto;
-    }
     .btn-line{
         padding: 10px;
         font-size: 10px;
