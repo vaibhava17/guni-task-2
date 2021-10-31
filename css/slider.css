@@ -1,6 +1,14 @@
-.range {
+.slider{
+    position: relative;
+    padding-top: 8%;
+}
+.range{
+    position: absolute;
+    top: 67%;
+    left: 50%;
     width: 75%;
     height: auto;
+    transform: translate(-50%, -50%);
 }
 
 .sliderValue {
@@ -24,7 +32,7 @@
 }
 
 .sliderValue span.show {
-    transform: translateX(-80%) scale(1);
+    transform: translateX(-50%) scale(1);
 }
 
 .sliderValue span:after {
@@ -114,7 +122,7 @@
         height: 11vw;
         width: 11vw;
         font-weight: 300;
-        top: -65px;
+        top: -15vw;
         line-height: 37px;
     }
 }
